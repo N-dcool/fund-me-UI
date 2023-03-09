@@ -2,6 +2,10 @@
 
 This is a minimalistic example what you can find in the [metamask docs](https://docs.metamask.io/guide/create-dapp.html#basic-action-part-1).
 
+## Demo Video 👇 :
+
+[<img src="https://cdn.discordapp.com/attachments/1071312646562914396/1083430269207445575/FundMe_UI.png">](https://youtu.be/JCqcq7TpT7c "FUNDME UI")
+
 # Requirements
 
 -   [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
