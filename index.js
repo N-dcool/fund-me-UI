@@ -29,7 +29,10 @@ async function getBalance() {
     if (typeof window.ethereum !== "undefined") {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const balance = await provider.getBalance(contractAddress);
-        console.log(ethers.utils.formatEther(balance));
+        const amount = ethers.utils.formatEther(balance);
+        console.log(amount);
+        alert(`Contract Balance = ${amount} ETH`);
+        return amount;
     }
 }
 
@@ -81,6 +84,7 @@ async function withdraw() {
         try {
             const transactionResponse = await contract.withdraw();
             await listenForTransactionMine(transactionResponse, provider);
+            alert(`Withdrawal was successfully`);
         } catch (e) {
             console.log(e);
         }
